@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Learnit
+* Copyright (C) 2017 Magedelight <info@magedelight.com>
+*
+* @category Learnit
+* @package Learnit_CategoryIcon
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Learnit_Categoryicon" setup_version="1.0.1" active="true">
+    </module>
+</config>

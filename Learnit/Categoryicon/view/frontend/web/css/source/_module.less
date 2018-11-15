@@ -1,0 +1,78 @@
+@md-color-3: #333333;
+@md-font-size-22: 22px;
+
+& when (@media-common = true) {
+    body{
+        background : red;
+    }
+      .md-furniture-category{
+        .lib-css(padding, 120px 0 100px);
+        color: red;
+        font-size: @md-font-size-22;
+        h3{
+            font-family: @font-family-name__base;
+            margin: 0 0 30px;
+            padding: 0;
+            font-size: @md-font-size-22;
+            color: @md-color-3;
+            font-weight: @font-weight__heavier;
+            text-transform: uppercase;
+            text-align: center;
+            span{
+                .lib-css(padding, 0 35px 13px);
+                .lib-css(display, inline-block );
+                .lib-css(border-bottom, solid 1px #cccccc);
+            }
+        }
+        p{
+            font-size: 15px;
+            font-weight: lighter;
+            .lib-css(text-align, center);
+            .lib-css(padding, 0 160px 0);
+            .lib-css(margin, 0 0 70px);
+            line-height: 20px;
+        }
+        .cat-box{
+            .lib-clearfix();
+            .lib-css(margin, 0);
+            li{
+                list-style: none;
+                .lib-css(margin, 0 0 20px);
+                .lib-css(padding, 0 10px 0);
+                .lib-css(width, 20%);
+                .lib-css(float, left);
+                .lib-css(text-align, center);
+                a{
+                    .lib-css(background-color, #fefefe);
+                    box-shadow: 0px 1px 7px 0 #cccccc;
+                    display: block;
+                    .lib-css(padding, 45px 0);
+                    &:hover{
+                        .cat-title{
+                            transition: all .5s ease-in-out 0s;
+                            color: @md-color-3;
+                        }
+                    }
+                }
+                .cat-img{
+                    .lib-css(display, table);
+                    .lib-css(margin, 0 auto);
+                    transition:all .25s cubic-bezier(.37,.8,.76,.96) 0s;
+                }
+                .cat-title{
+                    .lib-css(display, block);
+                    font-size: 17px;
+                    color: #333333;
+                    font-weight: @font-weight__regular;
+                    text-transform: uppercase;
+                }
+                &:nth-child(5n+1){
+                    margin-left: 0;
+                }
+                &:nth-child(4n+1){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

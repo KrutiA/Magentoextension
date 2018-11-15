@@ -1,0 +1,27 @@
+<?php
+$html = '';
+$html .= '<div class="md-furniture-category">';
+$html .= '<h3><span>Furniture Categories</span></h3>';
+$html .= '<p>From a welcoming new collection of lounge seating to an executive chair that melds craft with ergonomics We want to show you some of our featured products here</p>';
+$html .= '<ul class="cat-box">';
+
+$defaultimgurl = $this->getViewFileUrl('Learnit_Categoryicon::images/default.jpg');
+
+$image = $this->helper('Learnit\Categoryicon\Helper\Image');
+//level 2 categories
+$categories = $this->getCategoryCollection(true, 2, '', '', true);
+if ($categories) {
+    foreach ($categories as $category) {
+        if ($category->getMdCategoryIcon()) {
+            $resizedimage = $image->resize($category->getMdCategoryIcon(), 100, 100);
+        } else {
+            $resizedimage = $defaultimgurl;
+        }
+        $html .= '<li class="cat-items"><a target="_blank" href="' . $category->getRequestPath() . '"><span class="cat-img">
+        <img src="' . $resizedimage . '" alt="' . $category->getName() . '" width="100" height="100" /></span><span class="cat-title">' . $category->getName() . '</span></a></li>';
+    }
+} else {
+    $html .= 'No categories found.';
+}
+$html .= '</ul>';
+echo $html .= '</div>';

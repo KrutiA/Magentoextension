@@ -1,0 +1,2 @@
+Add this Block and you will get category Icons.
+<div>{{block class="Learnit\Categoryicon\Block\Homecategoryicon" template="Learnit_Categoryicon::homecategoryicon.phtml"}}</div>
