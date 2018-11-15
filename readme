@@ -3,3 +3,6 @@
 <div>{{block class="Learnit\Categoryicon\Block\Homecategoryicon" template="Learnit_Categoryicon::homecategoryicon.phtml"}}</div>
 3) Put below code in the page where category Icons will be display
 {{block class="Magento\Cms\Block\Block" block_id="block_identifier"}}
+4) setup upgrade : php bin/magento s:up
+5) setup upgrade : php bin/magento s:s:d -f
+6) setup upgrade : php bin/magento c:f
