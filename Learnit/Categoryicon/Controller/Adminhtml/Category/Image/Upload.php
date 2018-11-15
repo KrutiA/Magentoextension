@@ -2,8 +2,8 @@
 
 /**
  * Learnit
- * Copyright (C) 2018 Magedelight <info@magedelight.com>
- *
+ * Copyright (C) 2018 Learnit <krutiaparnathi2010@gmail.com>
+ * Author : Kruti Aparnathi
  * @category Learnit
  * @package Learnit_Categoryicon
  */
@@ -78,7 +78,7 @@ class Upload extends \Magento\Backend\App\Action {
      * @return boolean
      */
     protected function _isAllowed() {
-        return $this->_authorization->isAllowed('Magedelight_Categoryicon::category');
+        return $this->_authorization->isAllowed('Learnit_Categoryicon::category');
     }
 
     /**
