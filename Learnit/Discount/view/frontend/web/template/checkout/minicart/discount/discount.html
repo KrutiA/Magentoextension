@@ -1,0 +1,10 @@
+<!-- ko if: cart().bundlediscount -->
+<div class="subtotal bundlediscount">
+    <span class="label">
+    	<!-- ko i18n: 'Discount' --><!-- /ko -->
+    </span>
+    <div class="amount price-container">
+  		<span class="price-wrapper" data-bind="html: cart().bundlediscount"></span>
+	</div>
+</div>
+<!-- /ko -->

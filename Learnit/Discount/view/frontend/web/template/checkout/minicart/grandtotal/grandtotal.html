@@ -1,0 +1,10 @@
+<!-- ko if: cart().grandtotal -->
+<div class="subtotal bundlegrandtotal">
+    <span class="label">
+    	<!-- ko i18n: 'Grand Total' --><!-- /ko -->
+    </span>
+    <div class="amount price-container">
+  		<span class="price-wrapper" data-bind="html: cart().grandtotal"></span>
+	</div>
+</div>
+<!-- /ko -->
