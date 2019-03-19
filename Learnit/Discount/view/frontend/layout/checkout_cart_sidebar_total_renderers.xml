@@ -16,7 +16,7 @@
                                         <item name="discount" xsi:type="array">
                                             <item name="component" xsi:type="string">uiComponent</item>
                                             <!-- <item name="config" xsi:type="array">
-                                                <item name="template" xsi:type="string">Magedelight_Bundlediscount/checkout/minicart/discount</item>
+                                                <item name="template" xsi:type="string">learnit_Bundlediscount/checkout/minicart/discount</item>
                                             </item> -->
                                             <item name="children" xsi:type="array">
                                                 <item name="subtotal.totals" xsi:type="array">
@@ -31,7 +31,7 @@
                                         <item name="grandtotal" xsi:type="array">
                                             <item name="component" xsi:type="string">uiComponent</item>
                                             <!-- <item name="config" xsi:type="array">
-                                                <item name="template" xsi:type="string">Magedelight_Bundlediscount/checkout/minicart/grandtotal</item>
+                                                <item name="template" xsi:type="string">learnit_Bundlediscount/checkout/minicart/grandtotal</item>
                                             </item> -->
                                             <item name="children" xsi:type="array">
                                                 <item name="subtotal.totals" xsi:type="array">

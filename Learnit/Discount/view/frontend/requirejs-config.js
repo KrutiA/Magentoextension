@@ -6,8 +6,8 @@
  var config = {
  	map: {
  		'*': {
-             custompriceBox:  'Magedelight_Bundlediscount/js/custompricebox',
-             priceBundleCustom:  'Magedelight_Bundlediscount/js/price-bundle',
+             custompriceBox:  'learnit_Bundlediscount/js/custompricebox',
+             priceBundleCustom:  'learnit_Bundlediscount/js/price-bundle',
              "validation": "mage/validation/validation",
         }
     }
